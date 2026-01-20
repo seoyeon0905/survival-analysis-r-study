@@ -5,6 +5,19 @@ survival analysis using R, in preparation for clinical research.
 
 ---
 
+## Notes on Data and Ethics
+
+This repository does NOT contain any real patient data or code from ongoing research projects.
+
+This repository does not contain:
+- Real patient data
+- Code from ongoing research projects
+- Variables, outputs, or structures derived from restricted datasets
+
+All materials here are created solely for learning and practice purposes.
+
+---
+
 ## Background
 
 As an undergraduate research assistant, I have been participating in
