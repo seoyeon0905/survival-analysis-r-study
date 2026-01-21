@@ -1,135 +1,125 @@
-# Survival Analysis Study with R
+# R을 이용한 생존분석 스터디 로그  
+*(Survival Analysis Study with R)*
 
-This repository is a personal study log for learning the basics of
-survival analysis using R, in preparation for clinical research.
-
----
-
-## Notes on Data and Ethics
-
-This repository does NOT contain any real patient data or code from ongoing research projects.
-
-This repository does not contain:
-- Real patient data
-- Code from ongoing research projects
-- Variables, outputs, or structures derived from restricted datasets
-
-All materials here are created solely for learning and practice purposes.
+이 저장소는 **임상 연구를 준비하기 위해 R 기반 생존분석의 기초를 학습하며 정리한 개인 학습 기록**입니다.  
+논문 작성 및 임상 연구 참여 과정에서 반복적으로 접했던 생존분석 코드를,  
+단순히 실행하는 수준을 넘어 **분석의 의미와 목적을 이해하는 것**을 목표로 합니다.
 
 ---
 
-## Background
+## 데이터 및 연구 윤리 안내
 
-As an undergraduate research assistant, I have been participating in
-clinical research projects that involve survival analysis.
-My role has mainly involved visiting a medical data analysis center
-on a regular basis, running provided R scripts in a restricted environment,
-and checking and organizing the resulting outputs.
+본 저장소에는 **실제 환자 데이터나 진행 중인 연구 프로젝트의 코드가 포함되어 있지 않습니다.**
 
-While repeatedly executing the code, I gradually realized a limitation:
-although I could run the scripts as instructed,
-I found it difficult to clearly explain **what each part of the code was doing
-and why those analyses were necessary**.
-I knew that the code was related to survival analysis,
-but I was often following procedures without fully understanding
-the underlying statistical concepts or modeling assumptions.
+포함하지 않는 내용:
+- 실제 환자 데이터
+- 진행 중인 연구 프로젝트에서 사용된 코드
+- 제한된 데이터셋에서 파생된 변수, 결과, 데이터 구조
+
+모든 자료는 **학습 및 연습 목적을 위해 공개 데이터 또는 시뮬레이션 데이터로만 구성**되었습니다.
 
 ---
 
-## Motivation
+## 배경 (Background)
 
-Initially, I planned to study survival analysis through a small group study
-using R, starting from the basics.
-Although related textbooks were prepared,
-the study group was eventually cancelled due to various circumstances.
+학부연구생으로서 임상 연구에 참여하며,  
+정기적으로 의료 데이터 분석 센터를 방문해 제공된 R 스크립트를  
+제한된 환경에서 실행하고 결과를 확인·정리하는 역할을 수행해 왔습니다.
 
-Meanwhile, the research itself continued,
-and I was informed that I would soon be involved in writing
-a survival-analysis-based research paper.
-At that point, I felt that I could no longer remain in a state of
-*“running code without fully understanding it.”*
+이 과정에서 코드를 반복적으로 실행하면서도,  
+각 코드가 **무엇을 하는지, 왜 해당 분석이 필요한지**를  
+명확히 설명하기 어렵다는 한계를 느끼게 되었습니다.
 
-My advisor recommended reading example clinical papers
-to understand the overall research structure and analytical flow,
-and also advised becoming familiar with analysis tools
-and reference management software in advance.
-Through this process, it became clear that I needed to
-revisit survival analysis **from the fundamentals**.
+생존분석과 관련된 코드라는 사실은 알고 있었지만,  
+통계적 개념과 모델 가정에 대한 이해 없이  
+절차를 따라가고 있다는 문제의식을 갖게 되었습니다.
 
 ---
 
-## Study Goal
+## 학습 동기 (Motivation)
 
-Since this is a self-directed study,
-the goal is **not** to master survival analysis at an advanced theoretical level.
+초기에는 R을 활용한 생존분석 스터디를 통해 기초부터 학습할 계획이었으나,  
+여러 사정으로 스터디는 중단되었습니다.
 
-Instead, the objectives of this repository are:
+이후 연구가 계속 진행되며,  
+곧 **생존분석 기반 연구 논문 작성에 직접 참여하게 될 예정**이라는 점을 인지하게 되었고,  
+더 이상 “코드를 돌리기만 하는 상태”에 머물 수 없다고 판단하게 되었습니다.
 
-- To understand what the survival analysis code I have been running is actually doing
-- To be able to follow and interpret survival analysis methods used in clinical papers
-- To develop the ability to ask meaningful methodological questions during research
-- To build a solid conceptual foundation rather than focusing on model performance
-
-Even if the depth is limited, the emphasis is on
-**completing the study independently and documenting the learning process**.
+이에 따라 생존분석을 **기초 개념부터 다시 정리하고,  
+임상 논문의 분석 흐름을 이해할 수 있는 수준**을 목표로  
+개인 학습 기록용 저장소를 구축하게 되었습니다.
 
 ---
 
-## Study Plan
+## 학습 목표 (Study Goal)
 
-The study follows the structure of an introductory textbook on
-survival analysis with R.
-The chapters listed below reflect the planned learning trajectory,
-and corresponding practice scripts will be added gradually.
+본 저장소의 목적은 고급 이론 중심의 생존분석 숙달이 아닙니다.  
+대신 다음과 같은 목표를 가지고 있습니다.
 
-1. Introduction to survival analysis
-2. Basic concepts and statistical quantities in survival analysis
-3. Censoring and likelihood functions
-4. Counting processes and martingales
-5. Nonparametric estimation of survival functions
-6. Tests for equality of survival functions
-7. Cox proportional hazards model
-8. Residuals and model diagnostics
-9. Parametric regression models for survival analysis
-10. Competing risks models
+- 실행해 왔던 생존분석 코드의 의미를 이해하기
+- 임상 논문에서 사용되는 생존분석 방법을 따라 읽고 해석하기
+- 연구 과정에서 의미 있는 방법론적 질문을 할 수 있는 기반 마련
+- 모델 성능보다 개념적 이해에 초점을 둔 학습 기록 남기기
 
-Not all topics may be covered in full depth,
-but each chapter will be approached with the goal of
-conceptual understanding and practical familiarity.
+깊이는 제한적일 수 있으나,  
+**혼자서 학습을 완주하고 그 과정을 문서화하는 것**을 중요한 목표로 합니다.
 
 ---
 
-## Repository Structure
+## 학습 계획 (Study Plan)
+
+본 스터디는 R 기반 생존분석 입문 교재의 흐름을 따라 진행됩니다.  
+아래 주제에 따라 스크립트와 노트가 순차적으로 추가될 예정입니다.
+
+1. 생존분석 개요  
+2. 생존분석의 기본 개념과 통계적 지표  
+3. 검열(censoring)과 우도 함수  
+4. 카운팅 프로세스와 마팅게일  
+5. 생존함수의 비모수적 추정  
+6. 생존곡선 비교 검정  
+7. Cox 비례위험 모형  
+8. 잔차 분석과 모형 진단  
+9. 생존분석을 위한 모수적 회귀 모형  
+10. 경쟁위험 모형  
+
+---
+
+## 저장소 구조 (Repository Structure)
 
 ```
 survival-analysis-r-study/
 ├─ README.md
-├─ data/ # Public or simulated datasets only
-├─ scripts/ # R scripts for each concept
-├─ notebooks/ # R Markdown files for exploration and notes
-└─ references/ # Papers and reading notes (links only)
+├─ data/ # 공개 데이터 또는 시뮬레이션 데이터
+├─ scripts/ # 개념별 R 스크립트
+├─ notebooks/ # R Markdown 기반 실습 및 정리 노트
+└─ references/ # 참고 논문 및 읽기 기록 (링크만 포함)
 ```
-Each script focuses on a single concept,
-and all examples are based on **public or simulated data only**.
+
+- 각 스크립트는 하나의 개념에 집중하여 구성됩니다.
+- 모든 예제는 공개 데이터 또는 시뮬레이션 데이터만 사용합니다.
 
 ---
 
-## Notes on Data and Ethics
+## 데이터 및 연구 윤리 (재확인)
 
-This repository does **not** contain:
-- Real patient data
-- Code from ongoing research projects
-- Variables, outputs, or structures derived from restricted datasets
+본 저장소에는 다음이 포함되지 않습니다.
 
-All materials here are created solely for learning and practice purposes.
+- 실제 환자 데이터  
+- 진행 중인 연구 프로젝트 코드  
+- 제한된 데이터에서 파생된 변수나 결과  
+
+모든 내용은 **개인 학습 및 연습 목적**으로만 작성되었습니다.
 
 ---
 
-## Final Note
+## 마무리 (Final Note)
 
-This repository is intended as a learning record rather than a polished tutorial.
-Concepts may be incomplete or revised over time as understanding improves.
+본 저장소는 완성된 튜토리얼이 아닌  
+**학습 과정 자체를 기록한 개인 로그**입니다.
 
-The main purpose is to document the process of moving from
-*“running code”* to *“understanding analysis”*
-in the context of clinical research.
+이해가 깊어짐에 따라 내용은 수정·보완될 수 있으며,  
+일부 설명은 불완전할 수 있습니다.
+
+본 저장소의 핵심 목적은  
+**임상 연구 맥락에서 “코드를 실행하는 단계”에서  
+“분석을 이해하는 단계”로 이동하는 과정을 기록하는 것**입니다.
